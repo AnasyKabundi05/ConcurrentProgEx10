@@ -22,6 +22,7 @@ public class FileIO {
 
         Path p = Paths.get(file);
         List<String> lines = null;
+
         try {
             lines = Files.readAllLines(p);
             lines.remove(0);//remove the headers
